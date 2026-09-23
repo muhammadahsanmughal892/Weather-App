@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-App</title>
+
+    <style>
+    body {
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+    }
+
+    #city.input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    button {
+        padding: 10px 15px;
+        border-radius: 5px;
+        background: skyblue;
+        border: none;
+        cursor: pointer;
+    }
+    
+    </style>
 </head>
 <body>
     <h1>Weather App</h1>
@@ -12,9 +44,17 @@
         <input id="city-input" type="text">
          <button>Get</button>
     </form>
+     
+    <img src="" id="weather-icon" alt="">
 
     <p id="show-weather"></p>
     <p id="show-humidity"></p>
+    <p id="show-windSpeed"></p>
+    <p id="feels-Like"></p>
+    <p id="cloud-cover"></p>
+    <p id="wind-direction"></p>
+    <p id="pressure"></p>
+    <p id="weather-condition"></p>
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.17.0/dist/axios.min.js"></script>
     <script src="app.js"></script>
